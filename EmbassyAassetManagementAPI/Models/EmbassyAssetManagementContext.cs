@@ -44,6 +44,31 @@ public partial class EmbassyAssetManagementContext : DbContext
     public virtual DbSet<TblUserRole> TblUserRoles { get; set; }
 
    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Loginauditlog>(entity =>
