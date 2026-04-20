@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj": {}
+    "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj": {}
   },
   "projects": {
-    "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj": {
+    "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
+        "projectUniqueName": "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
         "projectName": "EmbassyAassetManagementAPI",
-        "projectPath": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
+        "projectPath": "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
         "packagesPath": "C:\\Users\\EG-78\\.nuget\\packages\\",
-        "outputPath": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\obj\\",
+        "outputPath": "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
