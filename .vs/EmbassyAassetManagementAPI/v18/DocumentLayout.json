@@ -1,14 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\",
+  "WorkspaceRootPath": "D:\\Shiivam\\embassy_api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj|d:\\pranjul sachan\\embassy_asset_management\\20_04_2026\\embassy_asset_management\\embassyaassetmanagementapi\\embassyaassetmanagementapi\\models\\embassyassetmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj|d:\\shiivam\\embassy_api\\embassyaassetmanagementapi\\models\\embassyassetmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj|solutionrelative:embassyaassetmanagementapi\\models\\embassyassetmanagementcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj|d:\\pranjul sachan\\embassy_asset_management\\20_04_2026\\embassy_asset_management\\embassyaassetmanagementapi\\embassyaassetmanagementapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj|solutionrelative:embassyaassetmanagementapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,26 +20,14 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EmbassyAssetManagementContext.cs",
-              "DocumentMoniker": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
+              "DocumentMoniker": "D:\\Shiivam\\embassy_api\\EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
               "RelativeDocumentMoniker": "EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
-              "ToolTip": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
+              "ToolTip": "D:\\Shiivam\\embassy_api\\EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
               "RelativeToolTip": "EmbassyAassetManagementAPI\\Models\\EmbassyAssetManagementContext.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAADwvzoAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBkAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T08:58:29.401Z",
+              "WhenOpened": "2026-04-20T12:18:54.394Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "LoginController.cs",
-              "DocumentMoniker": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\Controllers\\LoginController.cs",
-              "RelativeDocumentMoniker": "EmbassyAassetManagementAPI\\Controllers\\LoginController.cs",
-              "ToolTip": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\Controllers\\LoginController.cs",
-              "RelativeToolTip": "EmbassyAassetManagementAPI\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAqwCEAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T08:49:37.493Z"
             }
           ]
         }

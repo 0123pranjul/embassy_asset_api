@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EmbassyAassetManagementAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6be148f05b125a12518a2909ef92943c9f9cbb61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+159348fa190efbd9d01ec6c20c4acdb1d904a536")]
 [assembly: System.Reflection.AssemblyProductAttribute("EmbassyAassetManagementAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EmbassyAassetManagementAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
