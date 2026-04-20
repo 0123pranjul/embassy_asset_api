@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "8GaT4QjhhNw=",
+  "dgSpecHash": "1v5qytkV2oI=",
   "success": true,
-  "projectFilePath": "D:\\pranjul sachan\\Embassy_asset_management\\20_04_2026\\Embassy_asset_management\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
+  "projectFilePath": "D:\\pranjul sachan\\Embassy_asset_management\\21_04_2026\\embasy_api\\EmbassyAassetManagementAPI\\EmbassyAassetManagementAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\EG-78\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\EG-78\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
