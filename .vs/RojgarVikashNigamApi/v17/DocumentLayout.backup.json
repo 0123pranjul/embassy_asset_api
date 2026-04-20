@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\pranjul sachan\\Job-Portal\\17_nov\\30_oct_Jobportal\\RojgarVikashNigam_Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|RojgarVikashNigamApi\\RojgarVikashNigamApi.csproj|d:\\pranjul sachan\\job-portal\\17_nov\\30_oct_jobportal\\rojgarvikashnigam_api\\rojgarvikashnigamapi\\controllers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|RojgarVikashNigamApi\\RojgarVikashNigamApi.csproj|solutionrelative:rojgarvikashnigamapi\\controllers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GeoLocationController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Job-Portal\\17_nov\\30_oct_Jobportal\\RojgarVikashNigam_Api\\RojgarVikashNigamApi\\Controllers\\GeoLocationController.cs",
+              "RelativeDocumentMoniker": "RojgarVikashNigamApi\\Controllers\\GeoLocationController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Job-Portal\\17_nov\\30_oct_Jobportal\\RojgarVikashNigam_Api\\RojgarVikashNigamApi\\Controllers\\GeoLocationController.cs",
+              "RelativeToolTip": "RojgarVikashNigamApi\\Controllers\\GeoLocationController.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAkwHEAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-19T10:40:46.557Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

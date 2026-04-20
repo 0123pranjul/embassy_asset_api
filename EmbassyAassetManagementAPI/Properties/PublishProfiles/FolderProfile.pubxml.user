@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\pranjul sachan\pub</_PublishTargetUrl>
+    <History>True|2025-08-14T13:36:09.6825483Z||;True|2025-08-06T17:37:16.2475894+05:30||;True|2025-08-06T17:09:58.7901448+05:30||;True|2025-08-06T11:47:51.0707987+05:30||;True|2025-08-05T18:29:31.9047326+05:30||;True|2025-08-05T17:30:59.8715710+05:30||;True|2025-08-05T11:40:38.3523394+05:30||;True|2025-08-05T11:11:27.2966601+05:30||;True|2025-08-04T11:56:44.8549722+05:30||;True|2025-07-31T16:07:38.4133063+05:30||;True|2025-07-31T12:43:51.1183931+05:30||;True|2025-07-28T10:43:30.9616676+05:30||;True|2025-07-24T11:17:56.0235307+05:30||;True|2025-07-22T17:30:28.7395529+05:30||;True|2025-07-21T15:42:53.4331063+05:30||;True|2025-07-21T15:34:50.3702412+05:30||;True|2025-07-21T15:18:07.9243786+05:30||;</History>
+    <LastFailureDetails />
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="DefaultConnection">
+      <Value>Server=192.168.2.54%3bPort=5433%3bDatabase=police_challan_drc%3bUser Id=postgres%3bPassword=pass%40123%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

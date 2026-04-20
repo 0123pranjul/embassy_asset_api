@@ -1,0 +1,238 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\pranjul sachan\\Parking\\ParkingApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\controllers\\basiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\controllers\\basiccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\models\\dto\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\models\\dto\\menudto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\models\\parkingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\models\\parkingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\repository\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\repository\\dataclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\repository\\devicerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\repository\\devicerepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\repository\\vehicaluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\repository\\vehicaluserdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\controllers\\tblusermasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\controllers\\tblusermasterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\controllers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\controllers\\geolocationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|d:\\pranjul sachan\\parking\\parkingapi\\parkingapi\\service\\excelservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2103CAC-62CF-4D42-9596-B941D83F6749}|ParkingApi\\ParkingApi.csproj|solutionrelative:parkingapi\\service\\excelservices.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MenuDto.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Models\\DTO\\MenuDto.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Models\\DTO\\MenuDto.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Models\\DTO\\MenuDto.cs",
+              "RelativeToolTip": "ParkingApi\\Models\\DTO\\MenuDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T06:57:11.635Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataClass.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\DataClass.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Repository\\DataClass.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\DataClass.cs",
+              "RelativeToolTip": "ParkingApi\\Repository\\DataClass.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T05:49:14.219Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DeviceRepo.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\DeviceRepo.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Repository\\DeviceRepo.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\DeviceRepo.cs",
+              "RelativeToolTip": "ParkingApi\\Repository\\DeviceRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T06:48:45.436Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "VehicalUserDetails.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\VehicalUserDetails.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Repository\\VehicalUserDetails.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Repository\\VehicalUserDetails.cs",
+              "RelativeToolTip": "ParkingApi\\Repository\\VehicalUserDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-27T06:48:39.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\appsettings.json",
+              "RelativeDocumentMoniker": "ParkingApi\\appsettings.json",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\appsettings.json",
+              "RelativeToolTip": "ParkingApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2026-01-23T09:49:31.27Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "TblUserMastersController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\TblUserMastersController.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Controllers\\TblUserMastersController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\TblUserMastersController.cs",
+              "RelativeToolTip": "ParkingApi\\Controllers\\TblUserMastersController.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAvwH0AAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T09:47:11.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "GeoLocationController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\GeoLocationController.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Controllers\\GeoLocationController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\GeoLocationController.cs",
+              "RelativeToolTip": "ParkingApi\\Controllers\\GeoLocationController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwBIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T09:46:59.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BasicController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\BasicController.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Controllers\\BasicController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\BasicController.cs*",
+              "RelativeToolTip": "ParkingApi\\Controllers\\BasicController.cs*",
+              "ViewState": "AgIAABwAAAAAAAAAAADwvygAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T09:46:08.942Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ParkingDbContext.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Models\\ParkingDbContext.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Models\\ParkingDbContext.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Models\\ParkingDbContext.cs",
+              "RelativeToolTip": "ParkingApi\\Models\\ParkingDbContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAuwBUAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T09:45:22.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Controllers\\LoginController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "ParkingApi\\Controllers\\LoginController.cs",
+              "ViewState": "AgIAANQAAAAAAAAAAAAuwNkAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-23T06:48:58.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TestController.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Controllers\\TestController.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Controllers\\TestController.cs",
+              "RelativeToolTip": "ParkingApi\\Controllers\\TestController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:27:23.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Program.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Program.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Program.cs",
+              "RelativeToolTip": "ParkingApi\\Program.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAgwGUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:25:34.83Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ExcelServices.cs",
+              "DocumentMoniker": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Service\\ExcelServices.cs",
+              "RelativeDocumentMoniker": "ParkingApi\\Service\\ExcelServices.cs",
+              "ToolTip": "D:\\pranjul sachan\\Parking\\ParkingApi\\ParkingApi\\Service\\ExcelServices.cs",
+              "RelativeToolTip": "ParkingApi\\Service\\ExcelServices.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-21T10:15:49.637Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

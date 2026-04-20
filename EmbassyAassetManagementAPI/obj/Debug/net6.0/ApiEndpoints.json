@@ -1,0 +1,247 @@
+[
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.BasicController",
+    "Method": "GetMenusByRole",
+    "RelativePath": "api/Basic/GetMenusByRole",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.BasicController",
+    "Method": "GetMenusByRoleID",
+    "RelativePath": "api/Basic/GetMenusByRoleID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.BasicController",
+    "Method": "MappingUserbasisOfRole",
+    "RelativePath": "api/Basic/MappingUserbasisOfRole",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "map",
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserRole",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.GeoLocationController",
+    "Method": "LogLogin",
+    "RelativePath": "api/GeoLocation/log-login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "EmbassyAassetManagementAPI.Models.DTO.LoginAuditDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "_userData",
+        "Type": "EmbassyAassetManagementAPI.Models.DTO.LoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.LoginController",
+    "Method": "Logout",
+    "RelativePath": "api/Login/Logout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.LoginController",
+    "Method": "UserRegistration",
+    "RelativePath": "api/Login/UserRegistration",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "typechalan",
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TblUserMastersController",
+    "Method": "DeleteTblUserMaster",
+    "RelativePath": "api/TblUserMasters/DeleteTblUserMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "chalantype",
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TblUserMastersController",
+    "Method": "GetTblUserMaster",
+    "RelativePath": "api/TblUserMasters/GetTblUserMaster",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TblUserMastersController",
+    "Method": "GetTblUserMasters",
+    "RelativePath": "api/TblUserMasters/GetTblUserMasters",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[EmbassyAassetManagementAPI.Models.TblUserMaster, EmbassyAassetManagementAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TblUserMastersController",
+    "Method": "PostTblUserMaster",
+    "RelativePath": "api/TblUserMasters/PostTblUserMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "typechalan",
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TblUserMastersController",
+    "Method": "PutTblUserMaster",
+    "RelativePath": "api/TblUserMasters/PutTblUserMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "typemaster",
+        "Type": "EmbassyAassetManagementAPI.Models.TblUserMaster",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "EmbassyAassetManagementAPI.Controllers.TestController",
+    "Method": "GetAllUserDetails",
+    "RelativePath": "api/Test/GetAllUserDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

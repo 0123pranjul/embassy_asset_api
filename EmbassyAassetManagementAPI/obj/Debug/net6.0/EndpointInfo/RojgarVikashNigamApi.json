@@ -1,0 +1,2676 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "RojgarVikas-Nigam",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Basic/GetMenusByRoleID": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Basic/GetMenusByRole": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Basic/MappingUserbasisOfRole": {
+      "post": {
+        "tags": [
+          "Basic"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/GeoLocation/log-login": {
+      "post": {
+        "tags": [
+          "GeoLocation"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginAuditDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginAuditDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginAuditDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/Logout": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/UserRegistration": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/GetTblUserMasters": {
+      "get": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/GetTblUserMaster": {
+      "get": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/PutTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "parameters": [
+          {
+            "name": "UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/PostTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/DeleteTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Test/GetAllUserDetails": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Candidate": {
+        "type": "object",
+        "properties": {
+          "candidateid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "firstname": {
+            "type": "string",
+            "nullable": true
+          },
+          "middlename": {
+            "type": "string",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "zipcode": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkedinurl": {
+            "type": "string",
+            "nullable": true
+          },
+          "portfoliourl": {
+            "type": "string",
+            "nullable": true
+          },
+          "positionappliedfor": {
+            "type": "string",
+            "nullable": true
+          },
+          "availability": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "workauthorization": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "designation": {
+            "type": "string",
+            "nullable": true
+          },
+          "expyearmonth": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "profileurl": {
+            "type": "string",
+            "nullable": true
+          },
+          "candidateats": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateat"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateconsents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateconsent"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidatedocuments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidatedocument"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateeducations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateeducation"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateengagements": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateengagement"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateexperiences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateexperience"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidategdprs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidategdpr"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidatereferences": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidatereference"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidatescreenings": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidatescreening"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateskills": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateskill"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "candidateworkauths": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Candidateworkauth"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "cardmasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Cardmaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "comApplications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComApplication"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "comCommunications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComCommunication"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblCandidatejoblocations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblCandidatejoblocation"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblCandidatejobroles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblCandidatejobrole"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateat": {
+        "type": "object",
+        "properties": {
+          "atsid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "resumeparsed": {
+            "type": "string",
+            "nullable": true
+          },
+          "atskeywords": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationscore": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "sourceofhire": {
+            "type": "string",
+            "nullable": true
+          },
+          "timetohire": {
+            "$ref": "#/components/schemas/TimeSpan"
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateconsent": {
+        "type": "object",
+        "properties": {
+          "consentid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isinformationaccurate": {
+            "type": "boolean"
+          },
+          "dataprocessingconsent": {
+            "type": "boolean"
+          },
+          "digitalsignature": {
+            "type": "string",
+            "nullable": true
+          },
+          "signedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidatedocument": {
+        "type": "object",
+        "properties": {
+          "documentid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "documenttype": {
+            "type": "string",
+            "nullable": true
+          },
+          "filepath": {
+            "type": "string",
+            "nullable": true
+          },
+          "uploadedat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateeducation": {
+        "type": "object",
+        "properties": {
+          "educationid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "institutionname": {
+            "type": "string",
+            "nullable": true
+          },
+          "degree": {
+            "type": "string",
+            "nullable": true
+          },
+          "major": {
+            "type": "string",
+            "nullable": true
+          },
+          "graduationdate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "certificationorlicense": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateengagement": {
+        "type": "object",
+        "properties": {
+          "engagementid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "progressstep": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "optinjobalerts": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "lastupdated": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "matchpercentage": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateexperience": {
+        "type": "object",
+        "properties": {
+          "experienceid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "companyname": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobtitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "startdate": {
+            "type": "string",
+            "format": "date"
+          },
+          "enddate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "responsibilities": {
+            "type": "string",
+            "nullable": true
+          },
+          "achievements": {
+            "type": "string",
+            "nullable": true
+          },
+          "reasonforleaving": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidategdpr": {
+        "type": "object",
+        "properties": {
+          "gdprid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "consentgiven": {
+            "type": "boolean"
+          },
+          "privacypolicyaccepted": {
+            "type": "boolean"
+          },
+          "righttoerasure": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "requestdeletionat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidatereference": {
+        "type": "object",
+        "properties": {
+          "referenceid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "refname": {
+            "type": "string",
+            "nullable": true
+          },
+          "refoccupation": {
+            "type": "string",
+            "nullable": true
+          },
+          "refcontactinfo": {
+            "type": "string",
+            "nullable": true
+          },
+          "cancontact": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidatescreening": {
+        "type": "object",
+        "properties": {
+          "screeningid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fitanswer": {
+            "type": "string",
+            "nullable": true
+          },
+          "scenarioanswer": {
+            "type": "string",
+            "nullable": true
+          },
+          "willingtorelocate": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "willingtotravel": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "eeoGender": {
+            "type": "string",
+            "nullable": true
+          },
+          "eeoRace": {
+            "type": "string",
+            "nullable": true
+          },
+          "veteranstatus": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateskill": {
+        "type": "object",
+        "properties": {
+          "skillid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "skillname": {
+            "type": "string",
+            "nullable": true
+          },
+          "skilltype": {
+            "type": "string",
+            "nullable": true
+          },
+          "proficiency": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Candidateworkauth": {
+        "type": "object",
+        "properties": {
+          "workauthid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "authorizedtowork": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "requiresvisasponsorship": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "desiredsalary": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "earlieststartdate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "willingnesstotravel": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Cardmaster": {
+        "type": "object",
+        "properties": {
+          "cardid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "cardname": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "validupto": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComApplication": {
+        "type": "object",
+        "properties": {
+          "applicationid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "applieddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "employerstatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "employernotes": {
+            "type": "string",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "comCommunications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComCommunication"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "comInterviews": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComInterview"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "job": {
+            "$ref": "#/components/schemas/ComJob"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComCommunication": {
+        "type": "object",
+        "properties": {
+          "commid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employerid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "applicationid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "message": {
+            "type": "string",
+            "nullable": true
+          },
+          "channel": {
+            "type": "string",
+            "nullable": true
+          },
+          "sentat": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "application": {
+            "$ref": "#/components/schemas/ComApplication"
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "employer": {
+            "$ref": "#/components/schemas/ComEmployer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComEmployer": {
+        "type": "object",
+        "properties": {
+          "employerid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employertype": {
+            "type": "string",
+            "nullable": true
+          },
+          "companyname": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactperson": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "city": {
+            "type": "string",
+            "nullable": true
+          },
+          "state": {
+            "type": "string",
+            "nullable": true
+          },
+          "country": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "registrationNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "panNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "website": {
+            "type": "string",
+            "nullable": true
+          },
+          "industryType": {
+            "type": "string",
+            "nullable": true
+          },
+          "foundedYear": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "companySize": {
+            "type": "string",
+            "nullable": true
+          },
+          "linkedinUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "facebookUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "twitterUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "pincode": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ownershipType": {
+            "type": "string",
+            "nullable": true
+          },
+          "annualTurnover": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "businessLicenseNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "contactDesignation": {
+            "type": "string",
+            "nullable": true
+          },
+          "verificationStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "approvedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "logoUrl": {
+            "type": "string",
+            "nullable": true
+          },
+          "registrationDoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "gstDoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "panDoc": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "remarks": {
+            "type": "string",
+            "nullable": true
+          },
+          "comCommunications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComCommunication"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "comJobs": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComJob"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComInterview": {
+        "type": "object",
+        "properties": {
+          "interviewid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "applicationid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "scheduleddate": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "mode": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "notes": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "application": {
+            "$ref": "#/components/schemas/ComApplication"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ComJob": {
+        "type": "object",
+        "properties": {
+          "jobid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "employerid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobtitle": {
+            "type": "string",
+            "nullable": true
+          },
+          "jobdescription": {
+            "type": "string",
+            "nullable": true
+          },
+          "location": {
+            "type": "string",
+            "nullable": true
+          },
+          "employmenttype": {
+            "type": "string",
+            "nullable": true
+          },
+          "salaryrange": {
+            "type": "string",
+            "nullable": true
+          },
+          "posteddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "expirydate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "isactive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdby": {
+            "type": "string",
+            "nullable": true
+          },
+          "createddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedby": {
+            "type": "string",
+            "nullable": true
+          },
+          "updateddate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "noofvacancies": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "minexperience": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "maxexperience": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "qualificationrequired": {
+            "type": "string",
+            "nullable": true
+          },
+          "skillsrequired": {
+            "type": "string",
+            "nullable": true
+          },
+          "industry": {
+            "type": "string",
+            "nullable": true
+          },
+          "functionalarea": {
+            "type": "string",
+            "nullable": true
+          },
+          "applicationdeadline": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "jobtype": {
+            "type": "string",
+            "nullable": true
+          },
+          "genderpreference": {
+            "type": "string",
+            "nullable": true
+          },
+          "agelimit": {
+            "type": "string",
+            "nullable": true
+          },
+          "isfeatured": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "viewscount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "applicantscount": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "jobstatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "comApplications": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ComApplication"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "employer": {
+            "$ref": "#/components/schemas/ComEmployer"
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginAuditDto": {
+        "type": "object",
+        "properties": {
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
+          "appName": {
+            "type": "string",
+            "nullable": true
+          },
+          "ipAddress": {
+            "type": "string",
+            "nullable": true
+          },
+          "browserInfo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "mobno": {
+            "type": "string",
+            "nullable": true
+          },
+          "otp": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Salesman": {
+        "type": "object",
+        "properties": {
+          "salesmanid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "email": {
+            "type": "string",
+            "nullable": true
+          },
+          "phone": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "hiredate": {
+            "type": "string",
+            "format": "date",
+            "nullable": true
+          },
+          "target": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "achieved": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "status": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedAt": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblCandidatejoblocation": {
+        "type": "object",
+        "properties": {
+          "candidateJobLocationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "location": {
+            "$ref": "#/components/schemas/TblPreferredlocation"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblCandidatejobrole": {
+        "type": "object",
+        "properties": {
+          "candidateJobRoleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRoleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "assignedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "jobRole": {
+            "$ref": "#/components/schemas/TblJobrole"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblJobrole": {
+        "type": "object",
+        "properties": {
+          "jobRoleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "jobRoleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentJobRoleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isParent": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "inverseParentJobRole": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblJobrole"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "parentJobRole": {
+            "$ref": "#/components/schemas/TblJobrole"
+          },
+          "tblCandidatejobroles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblCandidatejobrole"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblMenuPerm": {
+        "type": "object",
+        "properties": {
+          "permissionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "menuId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "canRead": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "canWrite": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "canDelete": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "menu": {
+            "$ref": "#/components/schemas/TblPopupMenu"
+          },
+          "role": {
+            "$ref": "#/components/schemas/TblRoleMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblPopupMenu": {
+        "type": "object",
+        "properties": {
+          "menuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "menuName": {
+            "type": "string",
+            "nullable": true
+          },
+          "href": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "icon": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "helperurl": {
+            "type": "string",
+            "nullable": true
+          },
+          "orderby": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "tblMenuPerms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblMenuPerm"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblPreferredlocation": {
+        "type": "object",
+        "properties": {
+          "locationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "locationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentLocationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isParent": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "locationType": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "inverseParentLocation": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblPreferredlocation"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "parentLocation": {
+            "$ref": "#/components/schemas/TblPreferredlocation"
+          },
+          "tblCandidatejoblocations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblCandidatejoblocation"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblRoleMaster": {
+        "type": "object",
+        "properties": {
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblMenuPerms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblMenuPerm"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblUserMaster": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "headquarterId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "zoneId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "policeStationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "postid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "empid": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationalid": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidateid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "salesmanid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "companyname": {
+            "type": "string",
+            "nullable": true
+          },
+          "companytype": {
+            "type": "string",
+            "nullable": true
+          },
+          "employerid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "locationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "otp": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "candidate": {
+            "$ref": "#/components/schemas/Candidate"
+          },
+          "employer": {
+            "$ref": "#/components/schemas/ComEmployer"
+          },
+          "salesman": {
+            "$ref": "#/components/schemas/Salesman"
+          },
+          "tblUserRoleParents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserRoleUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblUserRole": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "parentid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parent": {
+            "$ref": "#/components/schemas/TblUserMaster"
+          },
+          "role": {
+            "$ref": "#/components/schemas/TblRoleMaster"
+          },
+          "user": {
+            "$ref": "#/components/schemas/TblUserMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TimeSpan": {
+        "type": "object",
+        "properties": {
+          "ticks": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "days": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "hours": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "milliseconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "minutes": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "seconds": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "totalDays": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalHours": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalMilliseconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalMinutes": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          },
+          "totalSeconds": {
+            "type": "number",
+            "format": "double",
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please enter a valid token",
+        "scheme": "Bearer",
+        "bearerFormat": "Jwt"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

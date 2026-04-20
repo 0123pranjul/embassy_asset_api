@@ -1,0 +1,4939 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "E-Chalan",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Basic/GetZoneByHeadId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetPolicStationByZoneId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetPolicByPoliceStationId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetSubChallanByChallanId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetChallanListByZoneId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetChallanListByChallanTypeId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetChallanTypeBysubchallanId": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Basic/GetMenusByRoleID": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Basic/GetMenusByRole": {
+      "get": {
+        "tags": [
+          "Basic"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Basic/MappingUserbasisOfRole": {
+      "post": {
+        "tags": [
+          "Basic"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserRole"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanPayments/GetTblChallanPayments": {
+      "get": {
+        "tags": [
+          "ChallanPayments"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanPayment"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanPayment"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanPayment"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanPayments/GetTblChallanPayment": {
+      "get": {
+        "tags": [
+          "ChallanPayments"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanPayments/PutTblChallanPayment": {
+      "post": {
+        "tags": [
+          "ChallanPayments"
+        ],
+        "parameters": [
+          {
+            "name": "ChallanPaymentId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ChallanPayments/PostTblChallanPayment": {
+      "post": {
+        "tags": [
+          "ChallanPayments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanPayment"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanPayments/DeleteTblChallanPayment": {
+      "post": {
+        "tags": [
+          "ChallanPayments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ChallanType/GetTblChallanTypeMasters": {
+      "get": {
+        "tags": [
+          "ChallanType"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanTypeMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanType/GetTblChallanTypeMaster": {
+      "get": {
+        "tags": [
+          "ChallanType"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanType/PutTblChallanTypeMaster": {
+      "post": {
+        "tags": [
+          "ChallanType"
+        ],
+        "parameters": [
+          {
+            "name": "ChallanTypeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/ChallanType/PostTblChallanTypeMaster": {
+      "post": {
+        "tags": [
+          "ChallanType"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanTypeMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/ChallanType/DeleteTblChallanTypeMaster": {
+      "post": {
+        "tags": [
+          "ChallanType"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanTypeMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/Get_device_information": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/Get_device_information_disabled": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/Device_info_by_id": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "srno",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/device_info_disable": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "srno",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/device_info_enable": {
+      "get": {
+        "tags": [
+          "Device"
+        ],
+        "parameters": [
+          {
+            "name": "srno",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/create_device_info": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Device/device_info_update": {
+      "post": {
+        "tags": [
+          "Device"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/tbl_device_information"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/LoginRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/Logout": {
+      "get": {
+        "tags": [
+          "Login"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Login/UserRegistration": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payments/GetTblModesOfPayments": {
+      "get": {
+        "tags": [
+          "Payments"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblModesOfPayment"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblModesOfPayment"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblModesOfPayment"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payments/GetTblModesOfPayment": {
+      "get": {
+        "tags": [
+          "Payments"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payments/PutTblModesOfPayment": {
+      "post": {
+        "tags": [
+          "Payments"
+        ],
+        "parameters": [
+          {
+            "name": "PaymentModeId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Payments/PostTblModesOfPayment": {
+      "post": {
+        "tags": [
+          "Payments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblModesOfPayment"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Payments/DeleteTblModesOfPayment": {
+      "post": {
+        "tags": [
+          "Payments"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblModesOfPayment"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblChallanCategories/GetTblChallanCategories": {
+      "get": {
+        "tags": [
+          "TblChallanCategories"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanCategory"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanCategory"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanCategory"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanCategories/GetTblChallanCategory": {
+      "get": {
+        "tags": [
+          "TblChallanCategories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanCategories/PutTblChallanCategory": {
+      "post": {
+        "tags": [
+          "TblChallanCategories"
+        ],
+        "parameters": [
+          {
+            "name": "ChallanCategoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblChallanCategories/PostTblChallanCategory": {
+      "post": {
+        "tags": [
+          "TblChallanCategories"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanCategory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanCategories/DeleteTblChallanCategory": {
+      "post": {
+        "tags": [
+          "TblChallanCategories"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblChallanSubCategories/GetTblChallanSubCategories": {
+      "get": {
+        "tags": [
+          "TblChallanSubCategories"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblChallanSubCategory"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanSubCategories/GetTblChallanSubCategory": {
+      "get": {
+        "tags": [
+          "TblChallanSubCategories"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanSubCategories/PutTblChallanSubCategory": {
+      "post": {
+        "tags": [
+          "TblChallanSubCategories"
+        ],
+        "parameters": [
+          {
+            "name": "ChallanSubCategoryId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblChallanSubCategories/PostTblChallanSubCategory": {
+      "post": {
+        "tags": [
+          "TblChallanSubCategories"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblChallanSubCategory"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblChallanSubCategories/DeleteTblChallanSubCategory": {
+      "post": {
+        "tags": [
+          "TblChallanSubCategories"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblChallanSubCategory"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblHeadquarters/GetTblHeadquarters": {
+      "get": {
+        "tags": [
+          "TblHeadquarters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblHeadquarter"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblHeadquarter"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblHeadquarter"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblHeadquarters/GetTblHeadquarter": {
+      "get": {
+        "tags": [
+          "TblHeadquarters"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblHeadquarters/PutTblHeadquarter": {
+      "post": {
+        "tags": [
+          "TblHeadquarters"
+        ],
+        "parameters": [
+          {
+            "name": "HeadquarterId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblHeadquarters/PostTblHeadquarter": {
+      "post": {
+        "tags": [
+          "TblHeadquarters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblHeadquarter"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblHeadquarters/DeleteTblHeadquarter": {
+      "post": {
+        "tags": [
+          "TblHeadquarters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblHeadquarter"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblPoliceRegistrations/GetTblPoliceRegistrations": {
+      "get": {
+        "tags": [
+          "TblPoliceRegistrations"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceRegistration"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceRegistrations/GetTblPoliceRegistration": {
+      "get": {
+        "tags": [
+          "TblPoliceRegistrations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceRegistrations/PutTblPoliceRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceRegistrations"
+        ],
+        "parameters": [
+          {
+            "name": "PoliceId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblPoliceRegistrations/PostTblPoliceRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceRegistrations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceRegistration"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceRegistrations/DeleteTblPoliceRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceRegistrations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblPoliceStationRegistrations/GetTblPoliceStationRegistrations": {
+      "get": {
+        "tags": [
+          "TblPoliceStationRegistrations"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceStationRegistrations/GetTblPoliceStationRegistration": {
+      "get": {
+        "tags": [
+          "TblPoliceStationRegistrations"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceStationRegistrations/PutTblPoliceStationRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceStationRegistrations"
+        ],
+        "parameters": [
+          {
+            "name": "PoliceStationId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblPoliceStationRegistrations/PostTblPoliceStationRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceStationRegistrations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblPoliceStationRegistrations/DeleteTblPoliceStationRegistration": {
+      "post": {
+        "tags": [
+          "TblPoliceStationRegistrations"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblPoliceStationRegistration"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/GetTblUserMasters": {
+      "get": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblUserMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/GetTblUserMaster": {
+      "get": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/PutTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "parameters": [
+          {
+            "name": "UserId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/PostTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblUserMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblUserMasters/DeleteTblUserMaster": {
+      "post": {
+        "tags": [
+          "TblUserMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblUserMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/GetTblVehicleChallanLists": {
+      "get": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblVehicleChallanList"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/GetTblVehicleChallanList": {
+      "get": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/PutTblVehicleChallanList": {
+      "post": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "parameters": [
+          {
+            "name": "Sno",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/PostTblVehicleChallanList": {
+      "post": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/DeleteTblVehicleChallanList": {
+      "post": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblVehicleChallanList"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblVehicleChallanLists/TblVehicleChallanListData": {
+      "post": {
+        "tags": [
+          "TblVehicleChallanLists"
+        ],
+        "requestBody": {
+          "content": {
+            "multipart/form-data": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "photofiles": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "videofiles": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "audiofiles": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Sno": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanNo": {
+                    "type": "string"
+                  },
+                  "ViolatorName": {
+                    "type": "string"
+                  },
+                  "ChallanTypeId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ZoneId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "DlNo": {
+                    "type": "string"
+                  },
+                  "RcNo": {
+                    "type": "string"
+                  },
+                  "VehicleNo": {
+                    "type": "string"
+                  },
+                  "MobileNo": {
+                    "type": "string"
+                  },
+                  "Amount": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "InvoiceType": {
+                    "type": "string"
+                  },
+                  "Photo": {
+                    "type": "string"
+                  },
+                  "remark": {
+                    "type": "string"
+                  },
+                  "finalamount": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Video": {
+                    "type": "string"
+                  },
+                  "Audio": {
+                    "type": "string"
+                  },
+                  "challan_type_name": {
+                    "type": "string"
+                  },
+                  "challan_amount": {
+                    "type": "string"
+                  },
+                  "PaymentStatus": {
+                    "type": "string"
+                  },
+                  "IsActive": {
+                    "type": "boolean"
+                  },
+                  "CreatedBy": {
+                    "type": "string"
+                  },
+                  "CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "UpdatedBy": {
+                    "type": "string"
+                  },
+                  "UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanTypeId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanTypeName": {
+                    "type": "string"
+                  },
+                  "ChallanType.MinAmount": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "ChallanType.MaxAmount": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "ChallanType.ChallanCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanSubCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.IsActive": {
+                    "type": "boolean"
+                  },
+                  "ChallanType.CreatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.categoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.SubcategoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanCategory.ChallanCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanCategory.ChallanCategoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanCategory.IsActive": {
+                    "type": "boolean"
+                  },
+                  "ChallanType.ChallanCategory.CreatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanCategory.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanCategory.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanCategory.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanCategory.TblChallanSubCategories": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanSubCategory"
+                    }
+                  },
+                  "ChallanType.ChallanCategory.TblChallanTypeMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanTypeMaster"
+                    }
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanSubCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanSubCategoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanSubCategory.IsActive": {
+                    "type": "boolean"
+                  },
+                  "ChallanType.ChallanSubCategory.CreatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanSubCategory.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanSubCategory.ChalanCategoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.ChallanCategoryId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.ChallanCategoryName": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.IsActive": {
+                    "type": "boolean"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.CreatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.TblChallanSubCategories": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanSubCategory"
+                    }
+                  },
+                  "ChallanType.ChallanSubCategory.ChallanCategory.TblChallanTypeMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanTypeMaster"
+                    }
+                  },
+                  "ChallanType.ChallanSubCategory.TblChallanTypeMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanTypeMaster"
+                    }
+                  },
+                  "ChallanType.TblVehicleChallanLists": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblVehicleChallanList"
+                    }
+                  },
+                  "TblChallanPayments": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblChallanPayment"
+                    }
+                  },
+                  "Zone.ZoneId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Zone.ZoneName": {
+                    "type": "string"
+                  },
+                  "Zone.IsActive": {
+                    "type": "boolean"
+                  },
+                  "Zone.CreatedBy": {
+                    "type": "string"
+                  },
+                  "Zone.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Zone.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "Zone.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Zone.HeadquarterId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Zone.Headquarter.HeadquarterId": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "Zone.Headquarter.HeadquarterName": {
+                    "type": "string"
+                  },
+                  "Zone.Headquarter.IsActive": {
+                    "type": "boolean"
+                  },
+                  "Zone.Headquarter.CreatedBy": {
+                    "type": "string"
+                  },
+                  "Zone.Headquarter.CreatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Zone.Headquarter.UpdatedBy": {
+                    "type": "string"
+                  },
+                  "Zone.Headquarter.UpdatedDate": {
+                    "type": "string",
+                    "format": "date-time"
+                  },
+                  "Zone.Headquarter.TblUserMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblUserMaster"
+                    }
+                  },
+                  "Zone.Headquarter.TblZoneMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblZoneMaster"
+                    }
+                  },
+                  "Zone.HeadquarterName": {
+                    "type": "string"
+                  },
+                  "Zone.TblPoliceStationRegistrations": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblPoliceStationRegistration"
+                    }
+                  },
+                  "Zone.TblUserMasters": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblUserMaster"
+                    }
+                  },
+                  "Zone.TblVehicleChallanLists": {
+                    "type": "array",
+                    "items": {
+                      "$ref": "#/components/schemas/TblVehicleChallanList"
+                    }
+                  }
+                }
+              },
+              "encoding": {
+                "photofiles": {
+                  "style": "form"
+                },
+                "videofiles": {
+                  "style": "form"
+                },
+                "audiofiles": {
+                  "style": "form"
+                },
+                "Sno": {
+                  "style": "form"
+                },
+                "ChallanNo": {
+                  "style": "form"
+                },
+                "ViolatorName": {
+                  "style": "form"
+                },
+                "ChallanTypeId": {
+                  "style": "form"
+                },
+                "ZoneId": {
+                  "style": "form"
+                },
+                "DlNo": {
+                  "style": "form"
+                },
+                "RcNo": {
+                  "style": "form"
+                },
+                "VehicleNo": {
+                  "style": "form"
+                },
+                "MobileNo": {
+                  "style": "form"
+                },
+                "Amount": {
+                  "style": "form"
+                },
+                "InvoiceType": {
+                  "style": "form"
+                },
+                "Photo": {
+                  "style": "form"
+                },
+                "remark": {
+                  "style": "form"
+                },
+                "finalamount": {
+                  "style": "form"
+                },
+                "Video": {
+                  "style": "form"
+                },
+                "Audio": {
+                  "style": "form"
+                },
+                "challan_type_name": {
+                  "style": "form"
+                },
+                "challan_amount": {
+                  "style": "form"
+                },
+                "PaymentStatus": {
+                  "style": "form"
+                },
+                "IsActive": {
+                  "style": "form"
+                },
+                "CreatedBy": {
+                  "style": "form"
+                },
+                "CreatedDate": {
+                  "style": "form"
+                },
+                "UpdatedBy": {
+                  "style": "form"
+                },
+                "UpdatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanTypeId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanTypeName": {
+                  "style": "form"
+                },
+                "ChallanType.MinAmount": {
+                  "style": "form"
+                },
+                "ChallanType.MaxAmount": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.IsActive": {
+                  "style": "form"
+                },
+                "ChallanType.CreatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.CreatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.UpdatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.UpdatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.categoryName": {
+                  "style": "form"
+                },
+                "ChallanType.SubcategoryName": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.ChallanCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.ChallanCategoryName": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.IsActive": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.CreatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.CreatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.UpdatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.UpdatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.TblChallanSubCategories": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanCategory.TblChallanTypeMasters": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanSubCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanSubCategoryName": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.IsActive": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.CreatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.CreatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.UpdatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.UpdatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChalanCategoryName": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.ChallanCategoryId": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.ChallanCategoryName": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.IsActive": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.CreatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.CreatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.UpdatedBy": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.UpdatedDate": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.TblChallanSubCategories": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.ChallanCategory.TblChallanTypeMasters": {
+                  "style": "form"
+                },
+                "ChallanType.ChallanSubCategory.TblChallanTypeMasters": {
+                  "style": "form"
+                },
+                "ChallanType.TblVehicleChallanLists": {
+                  "style": "form"
+                },
+                "TblChallanPayments": {
+                  "style": "form"
+                },
+                "Zone.ZoneId": {
+                  "style": "form"
+                },
+                "Zone.ZoneName": {
+                  "style": "form"
+                },
+                "Zone.IsActive": {
+                  "style": "form"
+                },
+                "Zone.CreatedBy": {
+                  "style": "form"
+                },
+                "Zone.CreatedDate": {
+                  "style": "form"
+                },
+                "Zone.UpdatedBy": {
+                  "style": "form"
+                },
+                "Zone.UpdatedDate": {
+                  "style": "form"
+                },
+                "Zone.HeadquarterId": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.HeadquarterId": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.HeadquarterName": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.IsActive": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.CreatedBy": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.CreatedDate": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.UpdatedBy": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.UpdatedDate": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.TblUserMasters": {
+                  "style": "form"
+                },
+                "Zone.Headquarter.TblZoneMasters": {
+                  "style": "form"
+                },
+                "Zone.HeadquarterName": {
+                  "style": "form"
+                },
+                "Zone.TblPoliceStationRegistrations": {
+                  "style": "form"
+                },
+                "Zone.TblUserMasters": {
+                  "style": "form"
+                },
+                "Zone.TblVehicleChallanLists": {
+                  "style": "form"
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblVehicleChallanList"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblZoneMasters/GetTblZoneMastersll": {
+      "get": {
+        "tags": [
+          "TblZoneMasters"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/TblZoneMaster"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblZoneMasters/GetTblZoneMaster": {
+      "get": {
+        "tags": [
+          "TblZoneMasters"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblZoneMasters/PutTblZoneMaster": {
+      "post": {
+        "tags": [
+          "TblZoneMasters"
+        ],
+        "parameters": [
+          {
+            "name": "ZoneId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/TblZoneMasters/PostTblZoneMaster": {
+      "post": {
+        "tags": [
+          "TblZoneMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/TblZoneMaster"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/TblZoneMasters/DeleteTblZoneMaster": {
+      "post": {
+        "tags": [
+          "TblZoneMasters"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/TblZoneMaster"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Test/GetAllUserDetails": {
+      "get": {
+        "tags": [
+          "Test"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_challan_no": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "challan_no",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_vehicle_no": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "vehicle_no",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_dl_no": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "dl_no",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_status": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_date": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_vehicle_challan_by_statusWithDate": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "status",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/Get_challan_by_challanno_vehicalno_dlno_with_Date": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "Datakey",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "Datavalue",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "from_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "to_date",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/VehicalUserDetails/GetTodayChallanSummary": {
+      "get": {
+        "tags": [
+          "VehicalUserDetails"
+        ],
+        "parameters": [
+          {
+            "name": "username",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "Success",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "LoginRequest": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblChallanCategory": {
+        "type": "object",
+        "properties": {
+          "challanCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "challanCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblChallanSubCategories": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblChallanSubCategory"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblChallanTypeMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblChallanTypeMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblChallanPayment": {
+        "type": "object",
+        "properties": {
+          "challanPaymentId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "challanNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentModeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "paymentAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "paymentStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "challanNoNavigation": {
+            "$ref": "#/components/schemas/TblVehicleChallanList"
+          },
+          "paymentMode": {
+            "$ref": "#/components/schemas/TblModesOfPayment"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblChallanSubCategory": {
+        "type": "object",
+        "properties": {
+          "challanSubCategoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "challanSubCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "challanCategoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "chalanCategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "challanCategory": {
+            "$ref": "#/components/schemas/TblChallanCategory"
+          },
+          "tblChallanTypeMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblChallanTypeMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblChallanTypeMaster": {
+        "type": "object",
+        "properties": {
+          "challanTypeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "challanTypeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "minAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "maxAmount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "challanCategoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "challanSubCategoryId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "categoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "subcategoryName": {
+            "type": "string",
+            "nullable": true
+          },
+          "challanCategory": {
+            "$ref": "#/components/schemas/TblChallanCategory"
+          },
+          "challanSubCategory": {
+            "$ref": "#/components/schemas/TblChallanSubCategory"
+          },
+          "tblVehicleChallanLists": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblVehicleChallanList"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblHeadquarter": {
+        "type": "object",
+        "properties": {
+          "headquarterId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "headquarterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblZoneMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblZoneMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblMenuPerm": {
+        "type": "object",
+        "properties": {
+          "permissionId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "menuId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "canRead": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "canWrite": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "canDelete": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "menu": {
+            "$ref": "#/components/schemas/TblPopupMenu"
+          },
+          "role": {
+            "$ref": "#/components/schemas/TblRoleMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblModesOfPayment": {
+        "type": "object",
+        "properties": {
+          "paymentModeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "paymentModeName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblChallanPayments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblChallanPayment"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblPoliceRegistration": {
+        "type": "object",
+        "properties": {
+          "policeId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "policeStationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "deviceId": {
+            "type": "string",
+            "nullable": true
+          },
+          "policStation": {
+            "type": "string",
+            "nullable": true
+          },
+          "decriptPass": {
+            "type": "string",
+            "nullable": true
+          },
+          "policeStation": {
+            "$ref": "#/components/schemas/TblPoliceStationRegistration"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblPoliceStationRegistration": {
+        "type": "object",
+        "properties": {
+          "policeStationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stationName": {
+            "type": "string",
+            "nullable": true
+          },
+          "latitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "longitude": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "zoneId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "zoneName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tblPoliceRegistrations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblPoliceRegistration"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "zone": {
+            "$ref": "#/components/schemas/TblZoneMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblPopupMenu": {
+        "type": "object",
+        "properties": {
+          "menuId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "menuName": {
+            "type": "string",
+            "nullable": true
+          },
+          "href": {
+            "type": "string",
+            "nullable": true
+          },
+          "parentId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "icon": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblMenuPerms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblMenuPerm"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblRoleMaster": {
+        "type": "object",
+        "properties": {
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "tblMenuPerms": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblMenuPerm"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserRoles": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblUserMaster": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "emailId": {
+            "type": "string",
+            "nullable": true
+          },
+          "address": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "token": {
+            "type": "string",
+            "nullable": true
+          },
+          "headquarterId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "zoneId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "lastname": {
+            "type": "string",
+            "nullable": true
+          },
+          "policeStationId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "empid": {
+            "type": "string",
+            "nullable": true
+          },
+          "nationalid": {
+            "type": "string",
+            "nullable": true
+          },
+          "postid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "selectedRoleId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "headquarter": {
+            "$ref": "#/components/schemas/TblHeadquarter"
+          },
+          "policeStation": {
+            "$ref": "#/components/schemas/TblPoliceStationRegistration"
+          },
+          "tblUserRoleParents": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserRoleUsers": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserRole"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "zone": {
+            "$ref": "#/components/schemas/TblZoneMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblUserRole": {
+        "type": "object",
+        "properties": {
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "roleId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "parentid": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "parent": {
+            "$ref": "#/components/schemas/TblUserMaster"
+          },
+          "role": {
+            "$ref": "#/components/schemas/TblRoleMaster"
+          },
+          "user": {
+            "$ref": "#/components/schemas/TblUserMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblVehicleChallanList": {
+        "type": "object",
+        "properties": {
+          "sno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "challanNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "violatorName": {
+            "type": "string",
+            "nullable": true
+          },
+          "challanTypeId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "zoneId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "dlNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "rcNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "vehicleNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "mobileNo": {
+            "type": "string",
+            "nullable": true
+          },
+          "amount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "invoiceType": {
+            "type": "string",
+            "nullable": true
+          },
+          "photo": {
+            "type": "string",
+            "nullable": true
+          },
+          "remark": {
+            "type": "string",
+            "nullable": true
+          },
+          "finalamount": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "video": {
+            "type": "string",
+            "nullable": true
+          },
+          "audio": {
+            "type": "string",
+            "nullable": true
+          },
+          "challan_type_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "challan_amount": {
+            "type": "string",
+            "nullable": true
+          },
+          "paymentStatus": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "challanType": {
+            "$ref": "#/components/schemas/TblChallanTypeMaster"
+          },
+          "tblChallanPayments": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblChallanPayment"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "zone": {
+            "$ref": "#/components/schemas/TblZoneMaster"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TblZoneMaster": {
+        "type": "object",
+        "properties": {
+          "zoneId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "zoneName": {
+            "type": "string",
+            "nullable": true
+          },
+          "isActive": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatedDate": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "headquarterId": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "headquarter": {
+            "$ref": "#/components/schemas/TblHeadquarter"
+          },
+          "headquarterName": {
+            "type": "string",
+            "nullable": true
+          },
+          "tblPoliceStationRegistrations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblPoliceStationRegistration"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblUserMasters": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblUserMaster"
+            },
+            "nullable": true,
+            "readOnly": true
+          },
+          "tblVehicleChallanLists": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/TblVehicleChallanList"
+            },
+            "nullable": true,
+            "readOnly": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "tbl_device_information": {
+        "type": "object",
+        "properties": {
+          "srno": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "device_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "device_id": {
+            "type": "string",
+            "nullable": true
+          },
+          "device_imei_1": {
+            "type": "string",
+            "nullable": true
+          },
+          "device_imei_2": {
+            "type": "string",
+            "nullable": true
+          },
+          "model_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "company_name": {
+            "type": "string",
+            "nullable": true
+          },
+          "version_no": {
+            "type": "string",
+            "nullable": true
+          },
+          "is_active": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "created_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "created_by": {
+            "type": "string",
+            "nullable": true
+          },
+          "updated_date": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "updated_by": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "Please enter a valid token",
+        "scheme": "Bearer",
+        "bearerFormat": "Jwt"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

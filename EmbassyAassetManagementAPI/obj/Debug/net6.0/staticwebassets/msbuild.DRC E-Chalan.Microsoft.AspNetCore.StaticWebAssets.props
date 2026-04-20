@@ -1,0 +1,76 @@
+﻿<Project>
+  <ItemGroup>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_audios\vehicle_challan_ado_1_meri_sehat_logo.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DRC E-Chalan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DRC E-Chalan</BasePath>
+      <RelativePath>vehicle_challan_audios/vehicle_challan_ado_1_meri_sehat_logo.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>bvjdja5yj2</Fingerprint>
+      <Integrity>19Alrlx/qzhiXzn15laHLvctBqBHBbnMUYSHInm0D8A=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_audios\vehicle_challan_ado_1_meri_sehat_logo.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_images\vehicle_challan_img_1_free1.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DRC E-Chalan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DRC E-Chalan</BasePath>
+      <RelativePath>vehicle_challan_images/vehicle_challan_img_1_free1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>r9o4udkjiy</Fingerprint>
+      <Integrity>34WUqzw573sBI1SMzxh4hwM35dx048nhYLMwBfU0waM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_images\vehicle_challan_img_1_free1.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_videos\vehicle_challan_vdo_1_free2.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DRC E-Chalan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DRC E-Chalan</BasePath>
+      <RelativePath>vehicle_challan_videos/vehicle_challan_vdo_1_free2.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>5tv1oyou42</Fingerprint>
+      <Integrity>t8hMgrzlUV6cBrT7R9mwNkZ5HfBPApcJFCahJtFfbTs=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\vehicle_challan_videos\vehicle_challan_vdo_1_free2.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\well_uploads\images\2_Well_free1.png'))">
+      <SourceType>Package</SourceType>
+      <SourceId>DRC E-Chalan</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/DRC E-Chalan</BasePath>
+      <RelativePath>well_uploads/images/2_Well_free1.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>r9o4udkjiy</Fingerprint>
+      <Integrity>34WUqzw573sBI1SMzxh4hwM35dx048nhYLMwBfU0waM=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\well_uploads\images\2_Well_free1.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+  </ItemGroup>
+</Project>

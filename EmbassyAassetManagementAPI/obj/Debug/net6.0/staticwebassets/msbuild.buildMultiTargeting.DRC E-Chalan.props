@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\DRC E-Chalan.props" />
+</Project>
